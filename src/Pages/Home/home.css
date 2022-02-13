@@ -51,6 +51,10 @@ body{
     background: #131313;
     border-radius: 15px;
     width: 95%;
+    justify-content:space-around; 
+    flex-wrap: wrap;
+    overflow: auto;
+    white-space: nowrap; 
 }
 .hr2{
 margin-left: 10px;
@@ -62,38 +66,51 @@ width: 95%;
 #list-one .one {
 background-color: #232323;
 border-radius: 4.68775px;
-width: 30%;
 height: 80%;
 position: relative; 
-/* overflow: hidden;  */
+overflow: hidden; 
  box-sizing: border-box; 
  /* justify-content:flex-start; */
- /* align-content: center; */
+ align-content: center;
 
 }
 .holder{
     overflow: hidden;
-    /* border: 3px red solid; */
-    background-color: aqua;
-    width: 210px;
     height: 150px;
-
-    margin: auto;
 }
 .holder .top  .img {
-   width: 50px;
+   width: 65px;
    height: 65px;
-   /* border: 3px blue solid; */
-   background-color: red;
-   margin-left: 30px;
+   margin-left: 20px;
    margin-top: 15px;
 }
 .holder .bottom {
-    margin-left: 16px;
+    margin-left: 5px;
 } 
 .location{
-    margin-left: 30px;
+    margin-left: 20px;
 }
 .date{
-    margin-left: 30px;
+    margin-left: 43px;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (min-width:700px)  and (max-width:1500px){
+    .holder{
+        width: 10%;
+    }
+}
+@media screen and (max-width:700px) {
+    .holder{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:500px){
+    .holder{
+        width:100%;
+    }
 }
