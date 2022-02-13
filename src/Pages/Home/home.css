@@ -66,13 +66,13 @@ width: 95%;
 #list-one .one {
 background-color: #232323;
 border-radius: 4.68775px;
-height: 80%;
+height: 90%;
 position: relative; 
 overflow: hidden; 
  box-sizing: border-box; 
  /* justify-content:flex-start; */
  align-content: center;
-
+ border: 5px #131313 solid;
 }
 .holder{
     overflow: hidden;
