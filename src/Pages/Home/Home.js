@@ -130,7 +130,6 @@ export const Home = () => {
                       id="city"
                       key={index}
                     >
-                      {" "}
                       {product.address.city}
                     </button>
                   ))}
@@ -153,6 +152,7 @@ export const Home = () => {
                 Products
               </h3>
             </div>
+            
             {Object.keys(newProducts).map((brand, index) => (
               <div key={index}>
                 <h3
@@ -217,33 +217,7 @@ export const Home = () => {
                 </div>
               </div>
             ))}
-            {/* /////////////////// */}
-            {/* {newProducts.map(
-                             (product)=>(   
-                                 <>
-                                
-                                <h3 className="mt-3 pName ml-2"  style={{color: "rgba(255, 255, 255, 1)"}}>{product.product_name}</h3>
-                                <hr className='hr2' />
-                              <div className='row' id="list-one">  
-                                      <div className='holder one mt-3  col-lg-3 col-md-4 col-sm-12 '>
-                                   <div className='top row'>
-                                        <div className='col-4  img' > <img src={product.image} alt="error 404"/> </div>
-                                             <div  className='col-6 data ml-2 mt-2'>
-                                                 <h6 style={{color:"rgba(255, 255, 255, 1)"}}  className="ml-4">{product.product_name}</h6>
-                                                 <h6   style={{ color: "rgba(255, 255, 255, 0.6)"}} className="ml-4">{product.brand_name}</h6>
-                                                 <h6  style={{ color: "rgba(255, 255, 255, 1)"}} className="ml-4">{product.price}</h6>
-                                             </div>
-                                    </div>
-                                       <div className='row '>
-                                            <div className='col-2 bottom'><h6 style={{ color: "rgba(255, 255, 255, 0.6)"}}>{product.address.city}</h6></div>
-                                             <div className='col-8 date'><h6 style={{ color: "rgba(255, 255, 255, 0.6)"}} className="ml-5">Date:{product.date}</h6></div>
-                                             <h5 className='location' style={{ color: "rgba(255, 255, 255, 0.6)"}} >{product.discription}</h5>
-                                       </div>
-                                </div>
-                                </div>
-                                </>
-                             ))}   */}
-            {/* ///////////// */}
+         
           </div>
         </div>
       </div>
